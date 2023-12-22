@@ -10,6 +10,7 @@
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
 
     <application
+
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
@@ -20,13 +21,26 @@
         android:theme="@style/Theme.JSON_file_API"
         tools:targetApi="31">
         <activity
-            android:name=".AudioPlayer"
-            android:exported="false">
+            android:name=".AccelSensor"
+            android:exported="true"
+            >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".SharedPreference"
+            android:exported="true">
 
         </activity>
         <activity
+            android:name=".AudioPlayer"
+            android:exported="false" />
+        <activity
             android:name=".Camera_Photo_Captured"
-            android:exported="false"></activity>
+            android:exported="false" />
         <activity
             android:name=".WebViewActivity"
             android:exported="false" />
