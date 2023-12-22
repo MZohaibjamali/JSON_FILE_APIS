@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Get_JSON_MZ">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView_GetJSON_adater"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Refresh"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:id="@+id/refresh"
+        />
+
+
+    <Button
+        android:id="@+id/refreshPostApi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="RefreshPostApi"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/refresh" />
+
+
+    <Button
+        android:id="@+id/WebPageButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="WebPage"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/refreshPostApi" />
+
+    <Button
+        android:id="@+id/iCamera"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="OpenCamera"
+        app:layout_constraintBottom_toTopOf="@+id/WebPageButton"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/musicPlayer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginStart="12dp"
+        android:text="Save Music"
+        app:layout_constraintBottom_toTopOf="@+id/refreshPostApi"
+        app:layout_constraintStart_toEndOf="@+id/iCamera" />
+
+    <ProgressBar
+        android:id="@+id/showLoader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:clickable="false"
+        android:indeterminateTintMode="src_atop"
+        android:indeterminateTint="#FF0505"
+        android:visibility="gone"
+        />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
