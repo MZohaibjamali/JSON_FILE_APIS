@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ServiceExp_Activity">
+
+    <Button
+        android:id="@+id/idBtnStartAudioService"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:text="Start Audio Service"
+        android:textAllCaps="false" />
+
+    <Button
+        android:id="@+id/idBtnStopAudioService"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/idBtnStartAudioService"
+        android:layout_margin="15dp"
+        android:text="Stop Audio Service"
+        android:textAllCaps="false" />
+
+</LinearLayout>
